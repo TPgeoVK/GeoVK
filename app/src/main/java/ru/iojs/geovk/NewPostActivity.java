@@ -9,6 +9,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import ru.iojs.geovk.api.ApiInterface;
 import ru.iojs.geovk.api.Place;
+import ru.iojs.geovk.api.PlaceRequest;
 import ru.iojs.geovk.api.RetrofitFactory;
 
 public class NewPostActivity extends AppCompatActivity {
@@ -26,7 +27,8 @@ public class NewPostActivity extends AppCompatActivity {
     private void predictPlace(Integer userId, Float latitude,
                               Float longitude, String text) {
 
-        final Call<Place> call = vkGeoApi.predictPlace(userId, latitude, longitude, text);
+        final Call<Place> call = vkGeoApi.predictPlace(
+                new PlaceRequest(userId, latitude, longitude, text));
         call.enqueue(new Callback<Place>() {
             @Override
             public void onResponse(Call<Place> call, Response<Place> response) {
