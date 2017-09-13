@@ -22,7 +22,8 @@
             style="@style/Widget.AppCompat.Button.Colored"
             android:background="@color/colorButton"
             android:text="@string/login"
-            android:layout_gravity="center" />
+            android:layout_gravity="center"
+            android:onClick="login"/>
 
     </FrameLayout>
 
