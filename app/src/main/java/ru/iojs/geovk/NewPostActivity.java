@@ -3,6 +3,7 @@ package ru.iojs.geovk;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.widget.Toast;
 
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -33,6 +34,9 @@ public class NewPostActivity extends AppCompatActivity {
             @Override
             public void onResponse(Call<Place> call, Response<Place> response) {
                 if (response.body() != null) {
+                    Toast toast = Toast.makeText(getApplicationContext(),
+                            "Вы находитесь в "+response.body().getTitle(), Toast.LENGTH_SHORT);
+                    toast.show();
                     Log.d("NewPostActivity", response.body().toString());
                 } else {
                     Log.d("NewPostActivity", "Returned place is null");

@@ -15,7 +15,6 @@ import retrofit2.http.Query;
 
 public interface ApiInterface {
 
-    @Headers("Content-type: application/json")
     @POST("/places/predict")
     Call<Place> predictPlace(@Body PlaceRequest request);
 }
