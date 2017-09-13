@@ -3,7 +3,7 @@ package ru.iojs.geovk;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-public class newPost extends AppCompatActivity {
+public class NewPostActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
