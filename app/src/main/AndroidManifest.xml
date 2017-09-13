@@ -19,13 +19,11 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name"
-            android:theme="@style/LoginTheme" />
+            android:theme="@style/MainTheme.NoActionBar" />
         <activity
             android:name=".BlogActivity"
             android:label="@string/title_activity_blog"
-            android:theme="@style/BlogTheme">
-
-        </activity>
+            android:theme="@style/MainTheme.NoActionBar" />
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
              (See the file "res/values/google_maps_api.xml").
@@ -40,7 +38,7 @@
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"/>
+            android:label="@string/title_activity_maps" />
         <activity
             android:name=".RecommendationsActivity"
             android:label="@string/title_activity_recommendations"
