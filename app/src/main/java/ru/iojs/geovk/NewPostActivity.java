@@ -19,6 +19,8 @@ public class NewPostActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_post);
+
+        predictPlace(305329040, 55.79692685F, 37.53768682F, "Ребятки, в мэйле круто");
     }
 
     private void predictPlace(Integer userId, Float latitude,
