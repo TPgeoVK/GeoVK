@@ -62,5 +62,7 @@ public class BlogActivity extends AppCompatActivity {
         RVAdapter adapter = new RVAdapter(cards);
         rv.setAdapter(adapter);
     }
+
+
 }
 
