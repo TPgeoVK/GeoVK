@@ -28,8 +28,7 @@
         </activity>
         <activity
             android:name=".BlogActivity"
-            android:label="@string/title_activity_blog"
-            android:theme="@style/MainTheme.NoActionBar">
+            android:label="@string/title_activity_blog">
         </activity>
         <meta-data
             android:name="com.google.android.geo.API_KEY"
@@ -41,8 +40,7 @@
         </activity>
         <activity
             android:name=".RecommendationsActivity"
-            android:label="@string/title_activity_recommendations"
-            android:theme="@style/MainTheme.NoActionBar">
+            android:label="@string/title_activity_recommendations">
         </activity>
         <activity
             android:name=".NewPostActivity"
