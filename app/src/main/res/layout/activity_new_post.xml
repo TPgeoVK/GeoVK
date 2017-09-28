@@ -11,7 +11,7 @@
         android:lines="15"
         android:padding="8dp"
         android:gravity="top|left"
-        android:cursorVisible="false"
+        android:cursorVisible="true"
         android:background="#00000000"
         android:scrollbars="vertical" />
 
