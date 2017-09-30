@@ -45,15 +45,11 @@ public class CheckinsActivity extends AppCompatActivity {
 
     private void initializeData(){
         cards = new ArrayList<>();
-        cards.add(new Card("Card 1", "Content 1"));
-        cards.add(new Card("Card 2", "Content 2"));
-        cards.add(new Card("Card 3", "Content 3"));
-        cards.add(new Card("Card 4", "Content 4"));
-        cards.add(new Card("Card 5", "Content 5"));
-        cards.add(new Card("Card 6", "Content 6"));
-        cards.add(new Card("Card 7", "Content 7"));
-        cards.add(new Card("Card 8", "Content 8"));
-        cards.add(new Card("Card 9", "Content 9"));
+        cards.add(new Card("Mail.ru Group", "28 сентября 2017"));
+        cards.add(new Card("Mail.ru Group", "28 сентября 2017"));
+        cards.add(new Card("МГТУ им. Н.Э. Баумана", "19 сентября 2017"));
+        cards.add(new Card("Jeffrey's Coffee", "19 сентября 2017"));
+
     }
 
     private void initializeAdapter(){
